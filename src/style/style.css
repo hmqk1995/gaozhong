@@ -16,13 +16,24 @@
 .index-left-heading {
   position: absolute;
   bottom: 0;
+  width: 100%;
+  height: 70%;
+  background: -webkit-gradient(linear,0% 0%, 0% 100%, from(rgba(0,0,0,0)), to(#0b2603));
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, #0b2603 100%);
 }
 
 .index-right-heading {
   position: absolute;
   top: 0;
+  width: 100%;
+  height: 70%;
+  background: -webkit-gradient(linear,0% 100%, 0% 0%, from(rgba(0,0,0,0)), to(#3b1b00));
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 100%, #3b1b00 0%);
 }
 
+.width100 {
+  width: 100%;
+}
 .width40 {
   width: 40%;
 }
@@ -35,4 +46,14 @@
 
 .block {
   display: block;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.top {
+  position: absolute;
+  top: 0;
 }
