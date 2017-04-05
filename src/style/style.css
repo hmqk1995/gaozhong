@@ -1,0 +1,38 @@
+.index-left {
+  background: #ccc;
+  min-height: 800px;
+  background: url('../../assets/images/bg1.jpg');
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.index-right {
+  background: #ddd;
+  min-height: 800px;
+  background: url('../../assets/images/bg2.jpg');
+  position: relative;
+}
+
+.index-left-heading {
+  position: absolute;
+  bottom: 0;
+}
+
+.index-right-heading {
+  position: absolute;
+  top: 0;
+}
+
+.width40 {
+  width: 40%;
+}
+.width25 {
+  width: 25%;
+}
+.width15 {
+  width: 15%;
+}
+
+.block {
+  display: block;
+}
