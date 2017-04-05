@@ -1,6 +1,10 @@
+html, body{
+  height:100%;
+}
+
 .index-left {
   background: #ccc;
-  min-height: 800px;
+  min-height: 100%;
   background: url('../../assets/images/bg1.jpg');
   background-size: 100% 100%;
   position: relative;
@@ -8,8 +12,9 @@
 
 .index-right {
   background: #ddd;
-  min-height: 800px;
+  min-height: 100%;
   background: url('../../assets/images/bg2.jpg');
+  background-size: 100% 100%;
   position: relative;
 }
 
@@ -51,6 +56,10 @@
 .bottom {
   position: absolute;
   bottom: 0;
+}
+
+.h100 {
+  height: 100%;
 }
 
 .top {
