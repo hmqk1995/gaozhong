@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>高中</title>
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/style/style.css" rel="stylesheet">
+    <style>
+      .choose {
+        background: url('assets/images/bg3.jpg');
+        background-size: 100% 100%;
+        position: relative;
+      }
+
+      .quarter {
+        width: 50%;
+        height: 50%;
+      }
+
+      .quarter h1 {
+        font-size: 4em;
+      }
+
+      .quarter .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        -ms-transform: translate3d(-50%, -50%, 0); 	/* IE 9 */
+        -moz-transform: translate3d(-50%, -50%, 0); 	/* Firefox */
+        -webkit-transform: translate3d(-50%, -50%, 0); /* Safari 和 Chrome */
+        -o-transform: translate3d(-50%, -50%, 0);
+      }
+
+      .quarter .center h1 {
+        text-align: center;
+      }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container-fluid h100">
+      <div class="row h100">
+        <div class="col-md-12 h100">
+          <div class="row choose h100">
+            <div class="quarter" style="position: absolute; top:0; left:0;">
+              <div class="center">
+                <h1>参观</h1>
+                <h1>Visit</h1>
+              </div>
+            </div>
+            <div class="quarter" style="position: absolute; top:0; right:0;">
+              <div class="center">
+                <h1>争鸣</h1>
+                <h1>Views</h1>
+              </div>
+            </div>
+            <div class="quarter" style="position: absolute; bottom:0; left:0;">
+              <div class="center">
+                <h1>影像</h1>
+                <h1>Images</h1>
+              </div>
+            </div>
+            <div class="quarter" style="position: absolute; bottom:0; right:0;">
+              <div class="center">
+                <h1>经历</h1>
+                <h1>Experience</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="assets/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="dist/js/bundle.js"></script>
+  </body>
+</html>
