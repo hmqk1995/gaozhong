@@ -21,6 +21,23 @@
       .navbar-nav li a {
         font-size: 16px;
       }
+
+      .gotoanother {
+        opacity: 0;
+      }
+      .gotoanother:hover {
+        opacity: 1;
+        transition: all 1s;
+        -moz-transition: all 1s; /* Firefox 4 */
+        -webkit-transition: all 1s; /* Safari 和 Chrome */
+        -o-transition: all 1s; /* Opera */
+      }
+
+
+
+      .dropdown:hover {
+        background: #313f30;
+      }
     </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,8 +61,10 @@
               <li><a href="#">争 鸣</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+              <img style="position: absolute; top: 5px; right: 32px;" src="assets/images/logo2.png" width="40" />
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">去青岛二中 <span class="caret"></span></a>
+
+                <a href="#" class="dropdown-toggle gotoanother" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">去青岛二中 <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">VISIT</a></li>
                   <li role="separator" class="divider"></li>
