@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>高中</title>
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/style/style.css" rel="stylesheet">
+    <style>
+      .choose {
+
+        position: relative;
+      }
+
+      .quarter {
+        width: 50%;
+        height: 50%;
+      }
+
+      .quater-mask-1 {
+        background: rgba(255, 255, 255, 0.5);
+        width: 50%;
+        height: 50%;
+      }
+
+      .quater-mask-2 {
+        background: rgba(0, 0, 0, 0.5);
+        width: 50%;
+        height: 50%;
+      }
+
+      .quarter:hover {
+        z-index: 9999;
+        color: #fff;
+        transform: scale(1.12);
+        -ms-transform: scale(1.12); 	/* IE 9 */
+        -moz-transform: scale(1.12); 	/* Firefox */
+        -webkit-transform: scale(1.12); /* Safari 和 Chrome */
+        -o-transform: scale(1.12);
+        transition: all 1s;
+        -moz-transition: all 1s; /* Firefox 4 */
+        -webkit-transition: all 1s; /* Safari 和 Chrome */
+        -o-transition: all 1s; /* Opera */
+      }
+
+      .quarter .center h1 {
+        text-align: center;
+      }
+
+      #quater1 {
+        background: url('assets/images/sz1.jpg');
+        background-size: 100% 100%;
+      }
+      #quater2 {
+        background: url('assets/images/sz2.jpg');
+        background-size: 100% 100%;
+      }
+      #quater3 {
+        background: url('assets/images/sz3.jpg');
+        background-size: 100% 100%;
+      }
+      #quater4 {
+        background: url('assets/images/sz4.jpg');
+        background-size: 100% 100%;
+      }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container-fluid h100">
+      <div class="row h100">
+        <div class="col-md-12 h100">
+          <div class="row choose h100">
+            <div class="quater">
+              <div class="quarter" id="quater1" style="position: absolute; top:0; left:0;">
+              </div>
+              <div class="quater-mask-1" style="position: absolute; top:0; left:0;">
+              </div>
+            </div>
+            <div class="quater">
+              <div class="quarter" id="quater2" style="position: absolute; top:0; right:0;">
+              </div>
+              <div class="quater-mask-2" style="position: absolute; top:0; right:0;">
+              </div>
+            </div>
+            <div class="quater">
+              <div class="quarter" id="quater3" style="position: absolute; bottom:0; left:0;">
+              </div>
+              <div class="quater-mask-2" style="position: absolute; bottom:0; left:0;">
+              </div>
+            </div>
+            <div class="quater">
+              <div class="quarter" id="quater4" style="position: absolute; bottom:0; right:0;">
+              </div>
+              <div class="quater-mask-1" style="position: absolute; bottom:0; right:0;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="assets/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="dist/js/main.js"></script>
+  <script type="text/javascript" src="dist/js/bundle.js"></script>
+  </body>
+</html>
