@@ -24,6 +24,7 @@
     });
   }
 
+
   hover('.quater-mask-1');
   hover('.quater-mask-2');
   hover('.quater-mask-3');
@@ -33,5 +34,17 @@
   changeText('#hoverlink2');
   changeText('#hoverlink3');
   changeText('#hoverlink4');
+
+  $('.index-left').hover(function(){
+    $('#szheading').show().addClass('rotate');
+  }, function(){
+    $('#szheading').hide().removeClass('rotate');
+  });
+
+  $('.index-right').hover(function(){
+    $('#ezheading').show().addClass('rotate');
+  }, function(){
+    $('#ezheading').hide().removeClass('rotate');
+  });
 
 }());

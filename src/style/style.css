@@ -3,6 +3,23 @@ html, body{
   font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
+.rotate {
+/*transform-origin: 25% 50%;
+-ms-transform-origin: 25% 50%;
+-moz-transform-origin: 25% 50%;
+-webkit-transform-origin: 25% 50%;
+-o-transform-origin: 25% 50%;*/
+transform:rotate(14deg);
+-ms-transform:rotate(14deg); 	/* IE 9 */
+-moz-transform:rotate(14deg); 	/* Firefox */
+-webkit-transform:rotate(14deg); /* Safari 和 Chrome */
+-o-transform:rotate(14deg); 	/* Opera */
+transition: all 1s;
+-moz-transition: all 1s; /* Firefox 4 */
+-webkit-transition: all 1s; /* Safari 和 Chrome */
+-o-transition: all 1s; /* Opera */
+}
+
 .index-left {
   background: #ccc;
   min-height: 100%;
@@ -19,41 +36,29 @@ html, body{
   position: relative;
 }
 
-.index-left-heading {
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 70%;
-  background: -webkit-gradient(linear,0% 0%, 0% 100%, from(rgba(0,0,0,0)), to(#0b2603));
-  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, #0b2603 100%);
-}
 
-.index-left-heading:hover {
+.index-left:hover {
   opacity: 1;
   transition: all 1s;
   -moz-transition: all 1s; /* Firefox 4 */
   -webkit-transition: all 1s; /* Safari 和 Chrome */
   -o-transition: all 1s; /* Opera */
+  background: url('../../assets/images/h1-mask.jpg');
+  background-size: 100% 100%;
 }
 
-.index-right-heading {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 70%;
-  background: -webkit-gradient(linear,0% 100%, 0% 0%, from(rgba(0,0,0,0)), to(#3b1b00));
-  background: -moz-linear-gradient(top, rgba(0,0,0,0) 100%, #3b1b00 0%);
-}
 
-.index-right-heading:hover {
+.index-right:hover {
   opacity: 1;
   transition: all 1s;
   -moz-transition: all 1s; /* Firefox 4 */
   -webkit-transition: all 1s; /* Safari 和 Chrome */
   -o-transition: all 1s; /* Opera */
+  background: url('../../assets/images/h2-mask.jpg');
+  background-size: 100% 100%;
 }
+
+
 
 .width100 {
   width: 100%;
