@@ -131,3 +131,16 @@ transition: all 1s;
 .navbar-inverse.sz .navbar-nav>.active>a {
   background: #54814e;
 }
+
+.navbar.ez {
+  background: #333;
+  border-bottom: 0;
+}
+
+.navbar.ez .navbar-nav a:hover {
+  background: #333;
+}
+
+.navbar-inverse.ez .navbar-nav>.active>a {
+  background: #7e6b5a;
+}
