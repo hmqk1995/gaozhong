@@ -35,10 +35,52 @@
   changeText('#hoverlink3');
   changeText('#hoverlink4');
 
+// index页左右两部分hover
   $('.index-left').hover(function(){
+
     $('#szheading').show();
+    TweenMax.to('#logo-half-s', 0.8, {
+      opacity: 1,
+      delay: 0.2,
+      right: 0
+    });
+
+    TweenMax.to('#head-text-left', 0.8, {
+      transform: 'rotate(0deg)',
+      delay: 0.2,
+      opacity: 1
+    });
+
+    TweenMax.to('#head-hand-left', 1, {
+      opacity: 1,
+      delay: 0.8
+    });
+
+    TweenMax.to('#head-hand-left', 0.5, {
+      repeat: -1,
+      yoyo: true,
+      scale: 1.1
+    });
+
+
   }, function(){
+
     $('#szheading').hide();
+    TweenMax.to('#logo-half-s', 0, {
+      opacity: 0,
+      right: '-100px'
+    });
+
+    TweenMax.to('#head-text-left', 0, {
+      transform: 'rotate(-24deg)',
+      opacity: 0
+    });
+
+    TweenMax.to('#head-hand-left', 0, {
+      opacity: 0,
+      scale: 1
+    });
+
   });
 
   $('.index-right').hover(function(){

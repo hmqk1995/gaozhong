@@ -3,6 +3,20 @@ html, body{
   font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
+#head-text-left {
+  transform:rotate(-24deg);
+  -ms-transform:rotate(-24deg);
+  -moz-transform:rotate(-24deg);
+  -webkit-transform:rotate(-24deg);
+  -o-transform:rotate(-24deg);
+  transform-origin: right;
+  -ms-transform-origin: right;
+  -moz-transform-origin: right;
+  -webkit-transform-origin: right;
+  -o-transform-origin: right;
+  opacity: 0;
+}
+
 .rotate {
 /*transform-origin: 25% 50%;
 -ms-transform-origin: 25% 50%;
@@ -10,10 +24,10 @@ html, body{
 -webkit-transform-origin: 25% 50%;
 -o-transform-origin: 25% 50%;*/
 transform:rotate(14deg);
--ms-transform:rotate(14deg); 	/* IE 9 */
--moz-transform:rotate(14deg); 	/* Firefox */
--webkit-transform:rotate(14deg); /* Safari 和 Chrome */
--o-transform:rotate(14deg); 	/* Opera */
+-ms-transform:rotate(14deg);
+-moz-transform:rotate(14deg);
+-webkit-transform:rotate(14deg);
+-o-transform:rotate(14deg);
 transition: all 1s;
 -moz-transition: all 1s; /* Firefox 4 */
 -webkit-transition: all 1s; /* Safari 和 Chrome */
