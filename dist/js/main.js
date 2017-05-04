@@ -36,15 +36,15 @@
   changeText('#hoverlink4');
 
   $('.index-left').hover(function(){
-    $('#szheading').show().addClass('rotate');
+    $('#szheading').show();
   }, function(){
-    $('#szheading').hide().removeClass('rotate');
+    $('#szheading').hide();
   });
 
   $('.index-right').hover(function(){
-    $('#ezheading').show().addClass('rotate');
+    $('#ezheading').show();
   }, function(){
-    $('#ezheading').hide().removeClass('rotate');
+    $('#ezheading').hide();
   });
 
 }());
