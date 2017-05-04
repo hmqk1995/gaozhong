@@ -95,6 +95,10 @@
         height: 50px;
         border-bottom: 6px solid #54814e !important;
       }
+
+      #speakingflow1:hover, #speakingflow2:hover, #speakingflow3:hover {
+        cursor: pointer;
+      }
     </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -137,13 +141,13 @@
         </nav>
 
         <div class="row">
-          <div class="container-fluid" style="padding-top: 20px; background: url('assets/images/zhengming-bg.jpg') no-repeat; background-size: 100%;">
+          <div class="container-fluid" style="padding-top: 25px; background: url('assets/images/zhengming-bg.jpg') no-repeat; background-size: 100%;">
             <div class="col-lg-offset-1 col-lg-5 col-md-6">
-              <div class="speakingflow" style="background:rgba(0,0,0, 0.5);">
+              <div id="speakingflow1" class="speakingflow" style="background:rgba(0,0,0,0.5);">
                 <img src="assets/images/zhengming-flow-1.jpg" width="100%" alt="" />
                 <div class="quote-area">
-                  <div class="teacher-quote-white">&nbsp;&nbsp;你不能拿深州的高中去跟北京的比。&nbsp;&nbsp;</div>
-                  <div style="color: #acdfa0;"><h1 style="display: inline-block;">王博尔</h1> <span style="font-size: 20px;">| 深州中学2017届1班 语文教师</span></div>
+                  <div class="teacher-quote-white">&nbsp;&nbsp;二中教育，就是要不断超越自己。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                  <div style="color: #c6ad74;"><h1 style="display: inline-block;">孙先亮</h1> <span style="font-size: 20px;">| 青岛二中校长</span></div>
                 </div>
               </div>
             </div>
@@ -151,25 +155,25 @@
             <div class="col-lg-5 col-md-6">
               <div class="row">
                 <div class="col-md-6">
-                  <div style="background:white; background:rgba(255,255,255, 0.8);">
+                  <div id="speakingflow2" style="background:white; background:rgba(255,255,255, 0.8);">
                     <img src="assets/images/zhengming-flow-2.jpg" width="100%" alt="" />
                     <div class="quote-area">
-                      <div class="teacher-quote-black">&nbsp;&nbsp;说了一些什么话吧大概。李奂熹这个人啊真的可以说是非常牛逼了我觉得。</div>
+                      <div class="teacher-quote-black">&nbsp;&nbsp;我觉得高考就像是坐车，坐在车上的人心态与车下人心态是不一样的。</div>
                       <div class="teacher-name">
-                        <div style="font-weight:bold; font-size: 20px;">万旭</div>
-                        <div>深州中学2017届2班 历史教师</div>
+                        <div style="font-weight:bold; font-size: 20px;">王子涛</div>
+                        <div>深州中学2017届实验班班主任</div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div style="background:white; background:rgba(255,255,255, 0.8);">
-                    <img src="assets/images/zhengming-flow-2.jpg" width="100%" alt="" />
+                  <div id="speakingflow3" style="background:white; background:rgba(255,255,255, 0.8);">
+                    <img src="assets/images/zhengming-flow-3.jpg" width="100%" alt="" />
                     <div class="quote-area">
-                      <div class="teacher-quote-black">&nbsp;&nbsp;说了一些什么话吧大概。李奂熹这个人啊真的可以说是非常牛逼了我觉得。</div>
+                      <div class="teacher-quote-black">&nbsp;&nbsp;我是（本地）高中教育的受害者，也是受益者。</div>
                       <div class="teacher-name">
-                        <div style="font-weight:bold; font-size: 20px;">万旭</div>
-                        <div>深州中学2017届2班 历史教师</div>
+                        <div style="font-weight:bold; font-size: 20px;">柳飞</div>
+                        <div>深州中学2013届毕业生</div>
                       </div>
                     </div>
                   </div>
@@ -258,5 +262,37 @@
   <script src="assets/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="dist/js/bundle.js"></script>
+  <script type="text/javascript" src="dist/js/TweenMax.min.js"></script>
+  <script>
+    $('#speakingflow1').hover(function(){
+      TweenMax.to('#speakingflow1', 0.5, {
+        background: 'rgba(0,0,0,1)'
+      });
+    }, function(){
+      TweenMax.to('#speakingflow1', 0.5, {
+        background: 'rgba(0,0,0,0.5)'
+      });
+    });
+
+    $('#speakingflow2').hover(function(){
+      TweenMax.to('#speakingflow2', 0.5, {
+        background: 'rgba(255,255,255,1)'
+      });
+    }, function(){
+      TweenMax.to('#speakingflow2', 0.5, {
+        background: 'rgba(255,255,255,0.8)'
+      });
+    });
+
+    $('#speakingflow3').hover(function(){
+      TweenMax.to('#speakingflow3', 0.5, {
+        background: 'rgba(255,255,255,1)'
+      });
+    }, function(){
+      TweenMax.to('#speakingflow3', 0.5, {
+        background: 'rgba(255,255,255,0.8)'
+      });
+    });
+  </script>
   </body>
 </html>
