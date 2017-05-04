@@ -18,7 +18,9 @@
       .quarter {
         width: 50%;
         height: 50%;
+        position: relative;
       }
+
 
       .quater-mask-1 {
         background: rgba(255, 255, 255, 0.5);
@@ -98,22 +100,38 @@
         <div class="col-md-12 h100">
           <div class="row choose h100">
             <div class="quater">
-              <a href="visit-sz.html"><div class="quarter" id="quater1" style="position: absolute; top:0; left:0;"></div></a>
+              <a href="visit-sz.html">
+                <div class="quarter" id="quater1" style="position: absolute; top:0; left:0;">
+                  <img id="c-visit" src="assets/images/c-visit.png" style="width: 420px; position: absolute; top:50%; left:50%; margin-left: -210px; margin-top: -55px;" />
+                </div>
+              </a>
               <div class="quater-mask-1" style="position: absolute; top:0; left:0;">
               </div>
             </div>
             <div class="quater">
-              <a href="images-sz.html"><div class="quarter" id="quater2" style="position: absolute; top:0; right:0;"></div></a>
+              <a href="images-sz.html">
+                <div class="quarter" id="quater2" style="position: absolute; top:0; right:0;">
+                  <img id="c-images" src="assets/images/c-images.png" style="width: 420px; position: absolute; top:50%; left:50%; margin-left: -210px; margin-top: -55px;" />
+                </div>
+              </a>
               <div class="quater-mask-2" style="position: absolute; top:0; right:0;">
               </div>
             </div>
             <div class="quater">
-              <a href="viewpoints-sz.html"><div class="quarter" id="quater3" style="position: absolute; bottom:0; left:0;"></div></a>
+              <a href="viewpoints-sz.html">
+                <div class="quarter" id="quater3" style="position: absolute; bottom:0; left:0;">
+                  <img id="c-viewpoints" src="assets/images/c-viewpoints.png" style="width: 420px; position: absolute; top:50%; left:50%; margin-left: -210px; margin-top: -55px;" />
+                </div>
+              </a>
               <div class="quater-mask-2" style="position: absolute; bottom:0; left:0;">
               </div>
             </div>
             <div class="quater">
-              <a href="experience-sz.html"><div class="quarter" id="quater4" style="position: absolute; bottom:0; right:0;"></div></a>
+              <a href="experience-sz.html">
+                <div class="quarter" id="quater4" style="position: absolute; bottom:0; right:0;">
+                  <img id="c-experience" src="assets/images/c-experience.png" style="width: 420px; position: absolute; top:50%; left:50%; margin-left: -210px; margin-top: -55px;" />
+                </div>
+              </a>
               <div class="quater-mask-1" style="position: absolute; bottom:0; right:0;">
               </div>
             </div>
@@ -130,5 +148,26 @@
   <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="dist/js/main.js"></script>
   <script type="text/javascript" src="dist/js/bundle.js"></script>
+  <script type="text/javascript" src="dist/js/TweenMax.min.js"></script>
+  <script>
+    function scaleChange(selector, tag) {
+      $(selector).hover(function(){
+        TweenMax.to(tag, 1.2, {
+          scale: 1.3,
+          delay: 0.2
+        });
+      }, function(){
+        TweenMax.to(tag, 0, {
+          scale: 1
+        });
+      });
+    }
+
+    scaleChange('#quater1', '#c-visit');
+    scaleChange('#quater2', '#c-images');
+    scaleChange('#quater3', '#c-viewpoints');
+    scaleChange('#quater4', '#c-experience');
+
+  </script>
   </body>
 </html>
