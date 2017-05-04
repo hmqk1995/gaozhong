@@ -17,6 +17,20 @@ html, body{
   opacity: 0;
 }
 
+#head-text-right {
+  transform:rotate(-24deg);
+  -ms-transform:rotate(-24deg);
+  -moz-transform:rotate(-24deg);
+  -webkit-transform:rotate(-24deg);
+  -o-transform:rotate(-24deg);
+  transform-origin: left;
+  -ms-transform-origin: left;
+  -moz-transform-origin: left;
+  -webkit-transform-origin: left;
+  -o-transform-origin: left;
+  opacity: 0;
+}
+
 .rotate {
 /*transform-origin: 25% 50%;
 -ms-transform-origin: 25% 50%;
