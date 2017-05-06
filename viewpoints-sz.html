@@ -121,6 +121,7 @@
         width: 100%;
         height: 100%;
         display: table;
+        opacity: 0;
       }
 
       .xy-info-ez {
@@ -170,6 +171,7 @@
         width: 100%;
         height: 100%;
         display: table;
+        opacity: 0;
       }
 
       .jr-info-ez {
@@ -525,7 +527,7 @@
                     </div>
                   </div>
                 </a>
-                <div style="width: 240px; color: ##516a4b; text-align: center; line-height: 2em; font-size: 18px; margin: 20px 0;">在可数的选择当中<br />选择高考就要全力以赴。<br />&nbsp;<br />&nbsp;</div>
+                <div style="width: 240px; color: #516a4b; text-align: center; line-height: 2em; font-size: 18px; margin: 20px 0;">在可数的选择当中<br />选择高考就要全力以赴。<br />&nbsp;<br />&nbsp;</div>
               </div>
             </div>
             <div class="row">
@@ -691,6 +693,27 @@
     }, function(){
       TweenMax.to('#speakingflow3', 0.5, {
         background: 'rgba(255,255,255,0.8)'
+      });
+    });
+
+    // 方块栏目悬停效果
+    $('.xy-info').hover(function(){
+      TweenMax.to($(this), 0.6, {
+        opacity: '1',
+      });
+    }, function(){
+      TweenMax.to($(this), 0.6, {
+        opacity: '0'
+      });
+    });
+
+    $('.jr-info').hover(function(){
+      TweenMax.to($(this), 0.6, {
+        opacity: '1',
+      });
+    }, function(){
+      TweenMax.to($(this), 0.6, {
+        opacity: '0'
       });
     });
   </script>
